@@ -1,0 +1,21 @@
+<div id="login" class="flex-scrollable" layout="column" ms-scroll>
+    <div id="login-form-wrapper" layout="column" layout-align="center center">
+        <md-button class="md-raised md-accent p-50 h1" ng-click="vm.login()" ng-disabled="!vm.CheckComplete">
+            <md-icon md-font-icon="icon-lock"></md-icon>
+            LOGIN
+            <div class="spinner-wrapper" ng-hide="vm.CheckComplete">
+                <div class="spinner">
+                    <div class="inner">
+                        <div class="gap"></div>
+                        <div class="left">
+                            <div class="half-circle"></div>
+                        </div>
+                        <div class="right">
+                            <div class="half-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </md-button>
+    </div>
+</div>

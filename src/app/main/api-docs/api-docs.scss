@@ -1,0 +1,27 @@
+md-sidenav {
+  width: 280px;
+  max-width: 280px;
+
+  .logo {
+
+    .logo-image {
+      display: block;
+      width: 32px;
+      min-width: 32px;
+      height: 32px;
+      line-height: 32px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .logo-text {
+      color: #FFFFFF;
+      margin-left: 16px;
+      font-size: 16px;
+    }
+  }
+}

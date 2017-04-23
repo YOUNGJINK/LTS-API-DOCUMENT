@@ -1,0 +1,37 @@
+<!-- SIDENAV -->
+<md-sidenav
+        class="md-sidenav-left"
+        md-component-id="sidenav-left"
+        md-is-locked-open="$mdMedia('gt-sm')"
+        md-whiteframe="4"
+        ng-include="'app/main/api-docs/sidenav/api-docs-sidenav.html'">
+</md-sidenav>
+<!-- / SIDENAV -->
+
+<md-content flex layout="column">
+    <!-- TOOLBAR -->
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" hide-gt-sm ng-click="vm.toogleSidenav('sidenav-left')">
+                <md-icon md-font-icon="icon-menu"></md-icon>
+            </md-button>
+            <h2>{{vm.pageTitle}}</h2>
+            <span flex></span>
+
+            <md-button class="md-icon-button" ng-click="vm.signout()">
+                <md-icon md-font-icon="icon-logout"></md-icon>
+                <md-tooltip>sign-out</md-tooltip>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <!-- /TOOLBAR -->
+
+    <!-- CONTENT -->
+    <md-content flex layout-padding>
+        <div ng-if="vm.isHome">
+            <h2>API 문서 입니다.</h2>
+            <p>BaseUrl: 업체 도메인 + /api/v1/</p>
+        </div>
+    </md-content>
+    <!-- /CONTENT -->
+</md-content>
